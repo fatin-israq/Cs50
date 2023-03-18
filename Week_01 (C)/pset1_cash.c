@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <cs50.h>
 
 int get_cents(void);
 int calculate_quarters(int cents);
@@ -41,7 +42,8 @@ int get_cents(void)
     do
     {
         scanf("%d", &cent);
-    } while (cent < 0);
+    }
+    while (cent < 0);
 
     return cent;
 }
