@@ -41,7 +41,7 @@ int get_cents(void)
     int cent;
     do
     {
-        scanf("%d", &cent);
+        cent = get_int("Cents owed: ");
     }
     while (cent < 0);
 
